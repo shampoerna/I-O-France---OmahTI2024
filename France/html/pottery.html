@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery - France Museum</title>
+    <link rel="stylesheet" href="/css/category.css" />
+</head>
+<body>
+    <header>
+        <h1>Pottery</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="/html/painting.html">Painting</a></li>
+                <li><a href="/html/sculpture.html">Sculpture</a></li>
+            </ul>
+        </nav>
+        <a href="/html/login.html"><button>Login</button></a>
+    </header>
+
+    <section>
+        <ul>
+            <li><img src="/src/soup.jpg"/><a href="#" onclick="toggle()" ><buttton class="btg">Soup plate (part of a set of three)</buttton></a></li>
+            <li><img src="/src/bleu.jpg"/><a href="#" onclick="toggle2()"><buttton class="btg">"Bleu de Deck" bowl</buttton></a></li>
+            <li><img src="/src/jardiniere.jpg"/><a href="#" onclick="toggle3()"><buttton class="btg">Jardinière with landscape</buttton></a></li>
+        </ul>
+        <div class="popup" id="popup">
+            <div id="popup"></div>
+            <h1>Soup plate (part of a set of three)</h1>
+            <p>Designer: Félix Bracquemond (French, Paris 1833–1914 Sèvres)</p>
+            <p>Maker: Produced by Eugêne Rousseau (1827–1891)</p>
+            <p>Manufacturer: Lebeuf et Milliet</p>
+            <p>Date: 1866–75</p>
+            <p>Culture: French, Creil</p>
+            <p>Medium: Creamware</p>
+            <p>Dimensions: Diameter: 9 3/4 in. (24.8 cm)</p>
+            <p>Classification: Ceramics-Pottery</p>
+            <p>Credit Line: Purchase, Friends of European Sculpture and Decorative Arts Gifts, 1996</p>
+                <a href="#" onclick="toggle()">Close</a>
+        </div>
+        <div class="popup" id="popup2">
+            <div id="popup"></div>
+            <h1>"Bleu de Deck" bowl</h1>
+            <p>Maker: Joseph-Théodore Deck (French, Guebwiller, Alsace 1823–1891 Paris)</p>
+            <p>Date: ca. 1870–80</p>
+            <p>Culture: French, Paris</p>
+            <p>Medium: Glazed earthenware</p>
+            <p>Dimensions: 3 1/4 × 7 1/4 in., 1.3 lb. (8.3 × 18.4 cm, 0.6 kg)</p>
+            <p>Classification: Ceramics-Pottery</p>
+            <p>Credit Line: PGift of Mrs. Alice Stern, 1993</p>
+                <a href="#" onclick="toggle2()">Close</a>
+        </div>
+        <div class="popup" id="popup3">
+            <div id="popup"></div>
+            <h1>Jardinière with landscape</h1>
+            <p>Maker: Haviland & Co. (American and French, 1864–1931)</p>
+            <p>Decorator: Emile Justin Merlot (French, 1839–1900)</p>
+            <p>Date: ca. 1880</p>
+            <p>Culture: French, Paris</p>
+            <p>Medium: Earthenware</p>
+            <p>Dimensions: Overall (confirmed): 8 7/8 × 13 3/8 × 3 7/8 in., 6 lb. (22.5 × 34 × 9.8 cm, 2.7 kg)</p>
+            <p>Classification: Ceramics-Pottery</p>
+            <p>Credit Line: Robert A. Ellison Jr. Collection, Gift of Robert A. Ellison Jr., 2013</p>
+                <a href="#" onclick="toggle3()">Close</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 France Museum.
+    </footer>
+
+    <script type="text/javascript">
+        function toggle(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup2.classList.contains('active')) {
+                popup2.classList.remove('active');
+            }
+            if (popup3.classList.contains('active')) {
+                popup3.classList.remove('active');
+            }
+    
+            popup.classList.toggle('active');
+        }
+        
+        function toggle2(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup.classList.contains('active')) {
+                popup.classList.remove('active');
+            }
+            if (popup3.classList.contains('active')) {
+                popup3.classList.remove('active');
+            }
+    
+            popup2.classList.toggle('active');
+        }
+        
+        function toggle3(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup.classList.contains('active')) {
+                popup.classList.remove('active');
+            }
+            if (popup2.classList.contains('active')) {
+                popup2.classList.remove('active');
+            }
+    
+            popup3.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

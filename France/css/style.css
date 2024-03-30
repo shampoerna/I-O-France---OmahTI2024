@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/src/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #F5DEB3;
+}
+
+header {
+    background-color: #2B58E1;
+    color: #F2F1F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+nav {
+    padding: 0.5rem 1rem;
+    margin-left: 22rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2F1F0;
+}
+
+nav ul li a:hover {
+    color: #D23636;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #D23636;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #2C2828;
+}
+
+button:hover {
+    background-color: #F2F1F0;
+    transition: all 0.5s ease 0s;
+}
+
+main {
+    padding: 4rem;
+    color: #F2F1F0;
+}
+
+.page1 h1{
+    font-size: 5rem;
+    width: 50rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.page1 p {
+    font-size: larger;
+    margin-bottom: 2rem;
+}
+
+.glry {
+    padding: 10px 70px;
+    border: #F2F1F0 1px solid;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 20rem;
+}
+
+.glry:hover {
+    border: #D23636 1px solid;
+    scale: 1.2;
+}
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D23636;
+}
+
+.page2 h1{
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.page2 p {
+    font-size: larger;
+    margin-bottom: 3rem;
+    width: 70rem;
+    text-align: center;
+}
+
+.read {
+    padding: 10px 70px;
+    background-color: #2C2828;
+    color: #F2F1F0;
+    border: #D23636 1px solid;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 12rem;
+}
+
+.read:hover {
+    background-color: #2B58E1;
+    border: #D23636 1px solid;
+    scale: 1.2;
+}
+
+.line {
+    margin-bottom: 8rem;
+}
+
+.dnt2 {
+    padding: 10px 70px;
+    background-color: #2C2828;
+    color: #F2F1F0;
+    border: #D23636 1px solid;
+    transition: all 0.5s ease 0s;
+    margin-bottom:  3rem;
+}
+
+.dnt2:hover {
+    background-color: #2B58E1;
+    border: #D23636 1px solid;
+    scale: 1.2;
+}
+
+.love {
+    margin-top: 0rem;
+    height: 10rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2.8rem;
+    justify-content: center;
+    background-color: #2C2828;
+    color: #F2F1F0;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+}
+
+.footer1 {
+    width: 28%;
+    display: flex;
+    gap: 7rem;
+    margin-left: 2rem;
+}
+
+.footer1 a{
+    text-decoration: none;
+    color: #F2F1F0;
+
+}
+
+.footer2 {
+    width: 28%;
+    color: #F2F1F0;
+}
+
+.footer2 a{
+    margin-top: 1rem;
+    display: flex;
+    text-decoration: none;
+    color: #D23636;
+    transition: all 0.5s ease 0s;
+}
+
+
+.footer3 {
+    width: 28%;
+    color: #F2F1F0;
+}
+
+.footer3 a{
+    text-decoration: none;
+    color: #D23636;
+}
+
+.footer4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer4 a:hover {
+    color: #D23636;
+}
+
+.footer5{
+    margin-top: 1.5rem;
+    color: var(--first-color);
+}
+
+.footer5 a:hover {
+    text-decoration: underline;
+}

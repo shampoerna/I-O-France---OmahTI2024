@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sculpture - France Museum</title>
+    <link rel="stylesheet" href="/css/category.css" />
+</head>
+<body>
+    <header>
+        <h1>Sculpture</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="/html/painting.html">Painting</a></li>
+                <li><a href="/html/pottery.html">Pottery</a></li>
+            </ul>
+        </nav>
+        <a href="/html/login.html"><button>Login</button></a>
+    </header>
+
+    <section>
+        <ul>
+            <li><img src="/src/venus.jpg"/><a href="#" onclick="toggle()" ><buttton class="btg">Venus of Laussel</buttton></a></li>
+            <li><img src="/src/reindeer.jpg"/><a href="#" onclick="toggle2()"><buttton class="btg">Swimming Reindeer</buttton></a></li>
+            <li><img src="/src/mammoth.jpg"/><a href="#" onclick="toggle3()"><buttton class="btg">Mammoth spear thrower</buttton></a></li>
+        </ul>
+        <div class="popup" id="popup">
+            <div id="popup"></div>
+            <h1>Venus of Laussel</h1>
+                <p>Material: Limestone</p>
+                <p>Height: 46 cm</p>
+                <p>Created: 25,000 years</p>
+                <p>Discovered: 1911 Marquay, Dordogne, France</p>
+                <p>Discovered by: Jean-Gaston Lalanne</p>
+                <p>Present location: Musée d'Aquitaine, Bordeaux, France</p>
+                <a href="#" onclick="toggle()">Close</a>
+        </div>
+        <div class="popup" id="popup2">
+            <div id="popup"></div>
+            <h1>Swimming Reindeer</h1>
+            <p>Material: Mammoth ivory</p>
+            <p>Size: 207 mm long</p>
+            <p>Created: 13,000 years ago</p>
+            <p>Discovered: Bruniquel, France</p>
+            <p>Present location: British Museum, London</p>
+                <a href="#" onclick="toggle2()">Close</a>
+        </div>
+        <div class="popup" id="popup3">
+            <div id="popup"></div>
+            <h1>Mammoth spear thrower</h1>
+            <p>Material: Antler</p>
+            <p>Length: 12 cm</p>
+            <p>Created: 12,500 years</p>
+            <p>Discovered: 2013 Bruniquel, Tarn-et-Garonne, France</p>
+            <p>Present location: London, England, United Kingdom</p>
+                <a href="#" onclick="toggle3()">Close</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 France Museum.
+    </footer>
+
+    <script type="text/javascript">
+        function toggle(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup2.classList.contains('active')) {
+                popup2.classList.remove('active');
+            }
+            if (popup3.classList.contains('active')) {
+                popup3.classList.remove('active');
+            }
+    
+            popup.classList.toggle('active');
+        }
+        
+        function toggle2(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup.classList.contains('active')) {
+                popup.classList.remove('active');
+            }
+            if (popup3.classList.contains('active')) {
+                popup3.classList.remove('active');
+            }
+    
+            popup2.classList.toggle('active');
+        }
+        
+        function toggle3(){
+            var popup = document.getElementById('popup');
+            var popup2 = document.getElementById('popup2');
+            var popup3 = document.getElementById('popup3');
+            
+            if (popup.classList.contains('active')) {
+                popup.classList.remove('active');
+            }
+            if (popup2.classList.contains('active')) {
+                popup2.classList.remove('active');
+            }
+    
+            popup3.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
